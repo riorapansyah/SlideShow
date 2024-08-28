@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nextSlideshow = () => {
+        counter++;
+      };
+
+      if (counter === 5) {
+        counter = 0;
+      }
+      slideshowNode.setAttribute("src", arrayGambar[counter]);
+      linkshowNode.setAttribute("href", arrayLink[counter]);
+      nextNode.addEventListener("click", nextSlideshow);
+    </script>
+  </body>
+</html>
